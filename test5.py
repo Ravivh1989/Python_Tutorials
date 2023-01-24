@@ -1,19 +1,7 @@
-class Javatpoint:   
-    def __init__(self, age = 0):   
-         self._age = age   
-      # using the getter method   
-    def get_age(self):   
-        return self._age   
-      # using the setter method   
-    def set_age(self, a):   
-        self._age = a   
-    
-John = Javatpoint()   
-    
-#using the setter function  
-John.set_age(19)   
-John.set_age(24)  
-# using the getter function  
-print(John.get_age())   
-    
-print(John._age)  
+import pprint
+
+import svn.local
+
+r = svn.local.LocalClient('/tmp/test_repo.co')
+info = r.info()
+pprint.pprint(info)

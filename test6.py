@@ -1,13 +1,12 @@
 class test:
-    
+    def __init__(self, age, name) :
+        self.age = age
+        self.name = name
+
 
     def display(self):
-        name = "ram"
-        age = 18
-        print(self.name,self.age)
+        return self.age,self.name
 
     
-
-
-emp = test()
-emp.display()
+result = test(30,'Ram')
+print(result.display())
